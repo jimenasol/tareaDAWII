@@ -53,7 +53,7 @@ public class DocenteController {
 		return ResponseEntity.ok(salida);
 	}
 
-	@GetMapping("/listaDocenteConParametros")
+	@GetMapping("/porDniNombreUbigeoConParametros")
 	@ResponseBody
 	public ResponseEntity<Map<String, Object>> listaDocenteNombreDniUbigeo(
 			@RequestParam(name = "nombre", required = false, defaultValue = "") String nombre,
